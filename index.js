@@ -11,10 +11,10 @@ const questions = () => {
     return inquirer.prompt([
     {
         type: 'input',
-        name: 'name',
+        name: 'title',
         message: 'What is the name of your project? (Required)',
-        validate: nameInput => {
-            if (nameInput) {
+        validate: titleInput => {
+            if (titleInput) {
                 return true;
             } else {
                 console.log('Please enter the name of your project.');
@@ -63,7 +63,7 @@ const questions = () => {
     },
     {
         type: 'input',
-        name: 'contribution',
+        name: 'contributors',
         message: "Would you like to add any Developers who have also contributed to your project?",
         // default: false
     },
@@ -84,7 +84,7 @@ const questions = () => {
         type: 'checkbox',
         name: 'license',
         message:'Which license was used for your project? (Required)',
-        choices: ['GNU', 'Apache', 'MIT', 'Other', 'None'],
+        choices: ['GNU', 'Apache 2.0', 'MIT', 'None'],
         validate: licenseCheckbox => {
             if (licenseCheckbox) {
                 return true;
@@ -136,12 +136,12 @@ function writeToFile(fileName, data) {
 };
 
 // TODO: Create a function to initialize app
-// function init() {
-//     inquirer.prompt(questions)
-//     .then((data) => {
-//         writeToFile('./dist/README.md', generateMarkdown(data))
-//     })
-// };
+function init() {
+    inquirer.prompt(questions)
+    .then(data => {
+        writeToFile('./README.md', generateMarkdown(data))
+    })
+};  
 
 // Function call to initialize app
 init();
