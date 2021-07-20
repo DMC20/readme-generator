@@ -60,7 +60,7 @@ const questions = [{
         }
     },
     {
-        type: 'input',
+        type: 'confirm',
         name: 'contributors',
         message: "Would you like to add any Developers who have also contributed to your project?",
     },
@@ -134,6 +134,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
         .then(data => {
+        
             writeToFile("./README.md", generateMarkdown(data))
     })
   }; 
