@@ -1,7 +1,7 @@
-# s
+# readme generator 
 
   ## Description
-  sd
+  to create a readme file 
 
   ## Table of Contents
   * [Installation](#installation)
@@ -10,16 +10,16 @@
   * [License](#license)
 
   ## Installation
-  sdf
+  clone repo, node js, and inquirer package
 
   ## Usage
-  sd
+  run through terminal 
   
   ## Contributors
-  true
+  No
 
   ## Test
-  dsdvf
+  through terminal 
 
   ## License 
   ### [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -32,5 +32,5 @@
 
   ## Questions
   If you have any questions, please feel free to reach out to me directly on the links provided:
-  Github: sdv (https://github.com/sdv)
-  Email: sdv
+  Github: DMC20 (https://github.com/DMC20)
+  Email: danielcarazo20@gmail.com
