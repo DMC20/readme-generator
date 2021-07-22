@@ -60,7 +60,7 @@ const questions = [{
         }
     },
     {
-        type: 'confirm',
+        type: 'input',
         name: 'contributors',
         message: "Would you like to add any Developers who have also contributed to your project?",
     },
